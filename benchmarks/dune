@@ -1,0 +1,3 @@
+(executable
+ (name queue_simple)
+ (libraries kcas kcas_data))

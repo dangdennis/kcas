@@ -1813,3 +1813,12 @@ OCaml) and [prettier](https://prettier.io/) (for Markdown).
 2. Run `dune-release tag VERSION` to create a tag for the new `VERSION`.
 3. Run `dune-release` to publish the new `VERSION`.
 4. Run `./update-gh-pages-for-tag VERSION` to update the online documentation.
+
+## Benchmarks
+
+### To create benchmarks
+
+1. Install [hyperfine](https://github.com/sharkdp/hyperfine)
+2. Create a new benchmark file inside `/benchmarks` (e.g. `/benchmarks/my_benchmark.ml`)
+3. Add the new benchmark as an executable `/benchmarks/dune`
+4. Run the benchmark as `hyperfine 'dune exec benchmarks/my_benchmark.exe'`
